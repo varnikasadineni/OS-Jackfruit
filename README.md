@@ -97,7 +97,7 @@ sudo ./engine stop beta
 
 ## 📸 Demo with Screenshots
 1. Multi-container supervision
-   <img width="1280" height="800" alt="ss1" src="https://github.com/user-attachments/assets/84d4e9b1-c20f-4cf8-9907-814c03230569" />
+   <img width="1280" height="768" alt="ss1" src="https://github.com/user-attachments/assets/85588481-e06c-4b90-8e02-1a6e711ea9f1" />
 
 Two containers running concurrently under a single supervisor process
 
@@ -106,15 +106,15 @@ Two containers running concurrently under a single supervisor process
    Supervisor maintains metadata including container ID, PID, and state
    
 3. Bounded-buffer logging
-   <img width="1536" height="1024" alt="ss3" src="https://github.com/user-attachments/assets/9453ae5e-58ee-49ea-b53b-c747339e2b39" />
+  <img width="1536" height="981" alt="ss3" src="https://github.com/user-attachments/assets/182afead-8e4a-4cc4-8ff6-eeeac5c2e4e8" />
    Container output captured through bounded-buffer logging pipeline
 
 4. CLI + IPC
-   <img width="1280" height="800" alt="ss4" src="https://github.com/user-attachments/assets/f713f8a6-d2a5-4292-93db-9d5a4626494d" />
+  <img width="1280" height="761" alt="ss4" src="https://github.com/user-attachments/assets/e7f75562-bb9a-411d-a76a-a26b056b36cc" />
    CLI communicates with supervisor via IPC mechanism
 
 5. Soft-limit warning
-   <img width="1536" height="1024" alt="ss5" src="https://github.com/user-attachments/assets/e9bad2f3-0b2a-41af-8ded-416e84f37a6e" />
+   <img width="1536" height="981" alt="ss5" src="https://github.com/user-attachments/assets/6b166238-470e-453d-a3d3-c3b6fdf28653" />
 
    Soft memory limit exceeded triggers warning without terminating container
 
