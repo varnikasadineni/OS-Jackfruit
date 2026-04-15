@@ -1,3 +1,4 @@
+
 # Multi-Container Runtime
 
 ## 🔹 Team Information
@@ -96,38 +97,38 @@ sudo ./engine stop beta
 
 ## 📸 Demo with Screenshots
 1. Multi-container supervision
-   <img width="1270" height="646" alt="image" src="https://github.com/user-attachments/assets/4f5c73a5-e9e8-4fe6-8ab3-09a635969cd4" />
+   <img width="1280" height="800" alt="ss1" src="https://github.com/user-attachments/assets/84d4e9b1-c20f-4cf8-9907-814c03230569" />
+
 Two containers running concurrently under a single supervisor process
 
 2. Metadata tracking (ps)
-   <img width="899" height="615" alt="image" src="https://github.com/user-attachments/assets/b04dfc4e-06c6-4a2a-9e7a-b507bbb7c1a4" />
+   <img width="836" height="252" alt="ss2" src="https://github.com/user-attachments/assets/a82408c6-83b4-4909-ad64-62855fabffa6" />
    Supervisor maintains metadata including container ID, PID, and state
    
 3. Bounded-buffer logging
-   <img width="968" height="654" alt="image" src="https://github.com/user-attachments/assets/21b7e9a8-0c1d-4044-8481-e62b5406de88" />
+   <img width="1536" height="1024" alt="ss3" src="https://github.com/user-attachments/assets/9453ae5e-58ee-49ea-b53b-c747339e2b39" />
    Container output captured through bounded-buffer logging pipeline
 
 4. CLI + IPC
-   <img width="952" height="489" alt="image" src="https://github.com/user-attachments/assets/7b816482-46ce-4262-8486-cad275ba9856" />
+   <img width="1280" height="800" alt="ss4" src="https://github.com/user-attachments/assets/f713f8a6-d2a5-4292-93db-9d5a4626494d" />
    CLI communicates with supervisor via IPC mechanism
 
 5. Soft-limit warning
-   <img width="1263" height="640" alt="image" src="https://github.com/user-attachments/assets/90bcd554-80f8-4790-864b-c32bb773bfba" />
-   <img width="1178" height="625" alt="image" src="https://github.com/user-attachments/assets/7e44fc57-1e01-4599-b028-db9df806b4cd" />
+   <img width="1536" height="1024" alt="ss5" src="https://github.com/user-attachments/assets/e9bad2f3-0b2a-41af-8ded-416e84f37a6e" />
 
    Soft memory limit exceeded triggers warning without terminating container
 
 6. Hard-limit enforcement
-   <img width="984" height="593" alt="image" src="https://github.com/user-attachments/assets/c8218f4e-f366-4d3a-84e6-5136e9f8ce46" />
+  <img width="1128" height="574" alt="ss6" src="https://github.com/user-attachments/assets/9272b74d-1939-42a1-ae10-e6870df0c841" />
    Hard memory limit enforcement terminates container process
 
 7. Scheduling experiment
-   <img width="1241" height="652" alt="image" src="https://github.com/user-attachments/assets/f12830ab-32d2-4dcb-af07-9ff58da7f494" />
-   <img width="805" height="523" alt="image" src="https://github.com/user-attachments/assets/1a4d1024-76c9-413d-ba27-4a209652eeca" />
+   <img width="1536" height="1024" alt="ss7 2" src="https://github.com/user-attachments/assets/4a863214-1d01-4f5a-8350-1e25b2a527bb"/><img width="1536" height="1024" alt="ss7 1" src="https://github.com/user-attachments/assets/7fa81226-0140-450b-afee-f5bdcf1e6d05" />
+
    Linux scheduler prioritizes lower nice value (higher priority) container
 
 8. Clean teardown
-   <img width="1254" height="646" alt="image" src="https://github.com/user-attachments/assets/0d38fbe5-748d-4a6c-8006-05a68c031027" />
+   <img width="1536" height="1024" alt="ss8" src="https://github.com/user-attachments/assets/9f07c1d8-9eb2-4430-be07-27a096820d1f" />
    All containers terminated cleanly with no zombie processes remaining
 
 ## 🔹 Engineering Analysis
